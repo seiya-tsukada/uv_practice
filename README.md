@@ -27,6 +27,35 @@ uv run --python 3.12 python -c 'print("hello world")'
 uv run example.py
 ```
 
+## How to use venv
+```
+cd [path]/[to]/[dir]
+uv venv # uv venv [dir]
+source ./.venv/bin/activate
+
+uv pip freeze
+uv pip install flask
+```
+
+### transition venv
+```
+uv pip freeze | uv pip compile - -o requirements.txt
+
+
+uv pip sync requirements.txt
+```
+
+### How to deactivate
+```
+deactivate
+```
+
+
+
+
+
+
+
 ### Features
 ```
 uv python install: Install Python versions.
