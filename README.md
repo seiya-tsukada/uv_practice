@@ -50,12 +50,6 @@ uv pip sync requirements.txt
 deactivate
 ```
 
-
-
-
-
-
-
 ### Features
 ```
 uv python install: Install Python versions.
@@ -64,7 +58,6 @@ uv python find: Find an installed Python version.
 uv python pin: Pin the current project to use a specific Python version.
 uv python uninstall: Uninstall a Python version.
 ```
-
 
 ## Docs
 https://docs.astral.sh/uv/
