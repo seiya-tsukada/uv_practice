@@ -31,7 +31,7 @@ uv run example.py
 ```
 cd [path]/[to]/[dir]
 uv venv # uv venv [dir]
-source ./.venv/bin/activate
+source .venv/bin/activate
 
 uv pip freeze
 uv pip install flask
