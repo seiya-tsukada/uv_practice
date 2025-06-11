@@ -43,6 +43,8 @@ uv pip freeze | uv pip compile - -o requirements.txt
 
 
 uv pip sync requirements.txt
+or
+uv pip install -r requirements.txt
 ```
 
 ### How to deactivate
