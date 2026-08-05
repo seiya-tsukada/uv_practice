@@ -19,7 +19,6 @@ uv python list --all-platforms
 uv python install 3.12
 
 uv run --python 3.12 python -c 'print("hello world")'
-
 ```
 
 ## run script
@@ -37,7 +36,14 @@ uv pip freeze
 uv pip install flask
 ```
 
-### transition venv
+## Best Practice
+```
+# create uv.lock
+# .venv is auto create by 「uv sync」
+uv sync --all-groups
+```
+
+## transition venv
 ```
 uv pip freeze | uv pip compile - -o requirements.txt
 
@@ -47,12 +53,12 @@ or
 uv pip install -r requirements.txt
 ```
 
-### How to deactivate
+## How to deactivate
 ```
 deactivate
 ```
 
-### Features
+## Features
 ```
 uv python install: Install Python versions.
 uv python list: View available Python versions.
